@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica 1 - Layouts HTML</title>
+    <h1>LUIS BEYMAR QUELCA QUELCA</h1>
+    <style>
+
+        body { font-family: Arial; margin: 0; padding: 0; }
+        header, footer { background: #333; color: white; padding: 1rem; text-align: center; }
+        .layout1 main, .layout2 .content, .layout3 { padding: 1rem; }
+        .layout2 { display: flex; }
+        .sidebar { width: 25%; background: #eee; padding: 1rem; }
+        .content { width: 75%; background: #ddd; padding: 1rem; }
+        .layout3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+        .card { background: #fafafa; border: 1px solid #ccc; padding: 1rem; border-radius: 8px; }
+    </style>
+</head>
+<body>
+
+<h1>Práctica 1 - Layouts HTML más comunes</h1>
+
+<!-- Layout 1: Header - Main - Footer -->
+<section class="layout1">
+    <h2>Layout 1: Encabezado - Contenido - Pie</h2>
+    <header>Encabezado</header>
+    <main>Contenido principal</main>
+    <footer>Pie de página</footer>
+</section>
+
+<hr>
+
+<!-- Layout 2: Sidebar + Main Content -->
+<section class="layout2">
+    <h2 style="width: 100%;">Layout 2: Barra lateral + Contenido</h2>
+    <div class="sidebar">Barra lateral</div>
+    <div class="content">Contenido principal</div>
+</section>
+
+<hr>
+
+<!-- Layout 3: Grid de tarjetas -->
+<section class="layout3">
+    <h2 style="grid-column: 1 / -1;">Layout 3: Tarjetas en grid</h2>
+    <div class="card">Tarjeta 1</div>
+    <div class="card">Tarjeta 2</div>
+    <div class="card">Tarjeta 3</div>
+</section>
+
+</body>
+</html>
